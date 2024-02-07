@@ -9,10 +9,10 @@ function randomDiceNumber(n) {
 }
 
 function App() {
-  const [myHistory, setMyHistory] = useState([]); //나왔던 주사위의 기록
+  const [myHistory, setMyHistory] = useState([]);
   const [myWin, setmyWin] = useState("");
 
-  const [otherHistory, setOhterHistory] = useState([]); //나왔던 주사위의 기록
+  const [otherHistory, setOhterHistory] = useState([]);
   const [otherWin, setOtherWin] = useState("");
 
   const handleRollClick = () => {
