@@ -6,7 +6,6 @@ function Board({ name, color, gameHistory, BoardWinner = "", className = "" }) {
   const sum = gameHistory.reduce((a, b) => a + b, 0);
   const classNames = `Board ${className} ${BoardWinner}`;
 
-  //gameHistory 쪽 변경
   const renderGameHistory = () => (
     <p>
       {gameHistory.map((item, index) => (
@@ -30,9 +29,6 @@ function Board({ name, color, gameHistory, BoardWinner = "", className = "" }) {
 
   return (
     <div className={classNames}>
-      {/* props : 컴포넌트에 지정하는 속성
-      숫자 지정 시 중괄호로 감싸줘야함 */}
-
       <div>
         <h2>{name}</h2>
         <Dice color={color} num={num} />
