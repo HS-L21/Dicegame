@@ -17,6 +17,17 @@ function Board({ name, color, gameHistory, BoardWinner = "", className = "" }) {
     </p>
   );
 
+  const finalWin = () => (
+    <span className="Board-win-span">
+      {BoardWinner !== "" && gameHistory.length === 5 && (
+        <span className="">WIN</span>
+      )}
+      {BoardWinner === "" && gameHistory.length === 5 && (
+        <span className="Board-lose-span">LOSE</span>
+      )}
+    </span>
+  );
+
   return (
     <div className={classNames}>
       {/* props : 컴포넌트에 지정하는 속성
@@ -28,9 +39,8 @@ function Board({ name, color, gameHistory, BoardWinner = "", className = "" }) {
         <h2>총점</h2>
         <p>{sum}</p>
         <h2>기록</h2>
-        <p>
-          <span>{renderGameHistory()}</span>
-        </p>
+        {renderGameHistory()}
+        <div className="Board-final">{finalWin()}</div>
       </div>
     </div>
   );

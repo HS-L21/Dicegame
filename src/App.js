@@ -64,6 +64,7 @@ function App() {
 
   //5번만 하고 싶음! -> 5번 후에는 무조건 처음부터 돌아가게!
   //5회 때 가장 큰 값을 가진 사람에게 board-winner를 주자
+  //5번만 주사위를 돌렸을 때 총합이 가장 큰 사람에게 WIN 이라는 글자를 넣어주자
 
   return (
     <div className="App">
