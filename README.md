@@ -25,4 +25,14 @@
     <li> 총점을 기반으로 WIN과 LOSE 표시</li>
     <li> 기타 CSS 수정</li>
   </ul>
+
+  <h3>🖥️ 화면</h3>
+  <ul>
+    <li>처음 화면</li>
+    <img src = "https://github.com/HS-L21/Dicegame/assets/88666395/c18956e7-0d47-40d3-bba5-d2dc3b16b3cc" alt ="처음 화면"/>
+    <br /><br />
+    <li>마지막 화면</li>
+    <img src = "https://github.com/HS-L21/Dicegame/assets/88666395/84358a91-dbcb-48dd-b126-e21dd34f7637" alt ="마지막 화면"/>
+    
+  </ul>
 </div>
