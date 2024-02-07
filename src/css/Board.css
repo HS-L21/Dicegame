@@ -6,7 +6,7 @@
   font-size: 16px;
   text-align: center;
   background-color: #272b38;
-  height: 100%; /* Occupy full height of parent */
+  height: 100%; 
 }
 
 .Board-winner {
