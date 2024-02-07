@@ -9,11 +9,9 @@ function randomDiceNumber(n) {
 }
 
 function App() {
-  //내 주사위 값
   const [myHistory, setMyHistory] = useState([]); //나왔던 주사위의 기록
   const [myWin, setmyWin] = useState("");
 
-  //상대방 주사위 값
   const [otherHistory, setOhterHistory] = useState([]); //나왔던 주사위의 기록
   const [otherWin, setOtherWin] = useState("");
 
@@ -21,7 +19,6 @@ function App() {
     const nextMyNum = randomDiceNumber(6);
     const nextOtherNum = randomDiceNumber(6);
 
-    //주사위 기록 -> 배열은 참조형 (주소값 참조) -> 전체를 새로 만든다고 생각해야함
     setMyHistory([...myHistory, nextMyNum]);
     setOhterHistory([...otherHistory, nextOtherNum]);
 
@@ -61,10 +58,6 @@ function App() {
     setmyWin("");
     setOtherWin("");
   };
-
-  //5번만 하고 싶음! -> 5번 후에는 무조건 처음부터 돌아가게!
-  //5회 때 가장 큰 값을 가진 사람에게 board-winner를 주자
-  //5번만 주사위를 돌렸을 때 총합이 가장 큰 사람에게 WIN 이라는 글자를 넣어주자
 
   return (
     <div className="App">
